@@ -1,6 +1,29 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
+void loadDiseasesFromFile(const string& filename)
+{
+    ifstream file(filename);
+
+    if (!file)
+    {
+        cout << "Error: Could not open file " << filename << endl;
+        return;
+    }
+
+    string diseaseName;
+    int diseaseCount;
+
+    while (file >> diseaseName >> diseaseCount)
+    {
+        Disease d(diseaseName, diseaseCount);
+        root = insert(root, d);
+    }
+
+    file.close();
+    cout << "Diseases loaded successfully from file.\n";
+}
 
 // Disease structure using avl tree
 struct Disease
@@ -144,6 +167,19 @@ void delete_Disease()
 void view_Diseases()
 {
     cout << "Showing all diseases...\n";
+    void view_Diseases()
+{
+    if (!root)
+    {
+        cout << "No diseases found.\n";
+        return;
+    }
+
+    cout << "Disease List (Inorder Traversal):\n";
+    inorder(root);
+    cout << endl;
+}
+
 }
 void Count_Diseases()
 {
