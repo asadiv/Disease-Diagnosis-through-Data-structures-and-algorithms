@@ -102,7 +102,7 @@ DiseaseNode* findDisease(string disease){
 }
 
 void loadData(){
-    ifstream categoryFile("Diseasecategory.txt",ios::in);
+    ifstream categoryFile("dataset/Diseasecategory.txt",ios::in);
     if(!categoryFile){
         cout<<"Diseasecategory.txt file failed to open"<<endl;
         return;
@@ -127,15 +127,13 @@ void loadData(){
                 if(child->name==category){
                     child->children.push_back(new CategoryTree(disease));
                     catFound=true;
+                    break;
                 }
             }
-            if(catFound=false){
+            if(catFound==false){
                 treetemp->children.push_back(new CategoryTree(category));
-                for(auto& child:treetemp->children){
-                    if(child->name==category){
-                        child->children.push_back(new CategoryTree(disease));
-                    }
-                }
+                CategoryTree* lastCateg = treetemp->children.back();
+                lastCateg->children.push_back(new CategoryTree(disease));
             }
         }
 
@@ -144,9 +142,9 @@ void loadData(){
 
 
     // read symptoms and store it in DiseaseNode
-    ifstream symptomFile("Symptoms.txt",ios::in);
+    ifstream symptomFile("dataset/Symptoms.txt",ios::in);
     if(!symptomFile){
-        cout<<"Diseasecategory.txt file failed to open"<<endl;
+        cout<<"Symptoms.txt file failed to open"<<endl;
         return;}
     string Symptomtemp;
     while (getline(symptomFile,Symptomtemp))
@@ -181,9 +179,9 @@ void loadData(){
     symptomFile.close();
 
     // now read treatments and prevention
-    ifstream TreatAndPreventionFile("treatmentAndPrevention.txt",ios::in);
+    ifstream TreatAndPreventionFile("dataset/treatmentAndPrevention.txt",ios::in);
     if(!TreatAndPreventionFile){
-        cout<<"Diseasecategory.txt file failed to open"<<endl;
+        cout<<"treatmentAndPrevention.txt file failed to open"<<endl;
         return;
     }
     string TreatPreventtemp; //treatment and prevention
@@ -197,6 +195,7 @@ void loadData(){
         disease.erase(disease.find_last_not_of(" ") + 1);
         disease.erase(0, disease.find_first_not_of(" "));
         stringstream ss2(TreatList);
+        stringstream ss3(preventList);
         string treatEach,preventEach;
         // store treatments in linklist and connect to treatmentHead
         while (getline(ss2,treatEach,','))
@@ -216,7 +215,7 @@ void loadData(){
             }
         }
         // store preventions in linklist and connect to preventionHead
-        while (getline(ss2,preventEach,','))
+        while (getline(ss3,preventEach,','))
         {
             // trim spaces
             preventEach.erase(0, preventEach.find_first_not_of(" "));
@@ -278,35 +277,85 @@ void PrintDiseaseInfo(DiseaseNode* Disease){
 void DiseaseLookup(){
     cout<<"\n\n         WELCOME TO DISEASE LOOKUP       \n";
     cout<<"Enter the valid name of disease: ";
-    string tempdiseaseName;
-    getline(cin,tempdiseaseName);
+    string inputdiseaseName;
+    getline(cin,inputdiseaseName);
+    transform(inputdiseaseName.begin(), inputdiseaseName.end(), inputdiseaseName.begin(), ::tolower);
     DiseaseNode* tempDisease = DiseaseHead;
     if(!tempDisease){
         cout<<"Sorry Disease list is empty\n";
         return;
     }else{
+        vector<DiseaseNode*> similarDiseases;  //for storing nearly matching diseases
         while (tempDisease)
         {
             string name = tempDisease->name;
-            vector<string> suggestionList; //for suggesting similar disease if exact not found
             transform(name.begin(), name.end(), name.begin(), ::tolower);
-            transform(tempdiseaseName.begin(), tempdiseaseName.end(), tempdiseaseName.begin(), ::tolower);
-            if(name==tempdiseaseName){
+            if(name==inputdiseaseName){
                 PrintDiseaseInfo(tempDisease);
                 return;
             }
-            if()//  write fun for finding similar words
+            if(name.size()>=2 && inputdiseaseName.size()>=2 && 
+                name.substr(0,2)==inputdiseaseName.substr(0,2)){
+                similarDiseases.push_back(tempDisease);
+            }
             tempDisease = tempDisease->next;
+        }
+        if(!similarDiseases.empty()){
+            cout<<"\nCouldnot find the exact disease, Did you mean: \n";
+            int index = 1;
+            for(auto sugg:similarDiseases){
+                cout<<index<<". "<<sugg->name<<endl;
+                index++;
+            }
+            cout<<"Enter a digit to see respective disease or press any other key to exit: ";
+            int choice;
+            cin>>choice;
+            cin.ignore();
+            if(choice>=1 && choice<=similarDiseases.size()){
+                PrintDiseaseInfo(similarDiseases[choice-1]);
+            }else{
+                return;
+            }
+        }else{
+            cout<<"Sorry could not find the disease: "<<inputdiseaseName<<endl;
         }
         
     }
 }
 
 
+void exploreCategory(){
+    cout<<"\n\n         DISEASE CATEGORIES\n";
+    CategoryTree* tempRoot = categoryHead;
+    if(!tempRoot){
+        cout<<"Category tree is empty. (calling from exploreCategory())"<<endl;
+        return;
+    }
+    int index=1;
+    for(auto categ:tempRoot->children){
+        cout<<index<<". "<<categ->name<<endl;
+        index++;
+    }
+    cout<<"Choose a category:";
+    int choice;
+    cin>>choice;
+    cin.ignore();
+    if(choice>=1 && choice<=tempRoot->children.size()){
+        cout<<"\nCategory: "<<tempRoot->children[choice-1]->name<<endl;
+        for(auto subcat:tempRoot->children[choice-1]->children){
+            cout<<subcat->name<<endl;
+        }
+    }else{
+        cout<<"Invalid input. returning...\n";
+        return;
+    }
+}
+
+
 
 int main(){
-
-
+    loadData();
+    DiseaseLookup();
 
     return 0;
 }
