@@ -1,10 +1,10 @@
-Flu | Rest, Drink warm fluids, Paracetamol | Annual vaccination, Proper hygiene
-COVID-19 | Isolation, Fever medication, Oxygen therapy if severe | Vaccination, Mask wearing, Social distancing
-Typhoid | Antibiotics, Adequate fluids, Rest | Clean drinking water, Proper sanitation
-Tuberculosis | Long-term antibiotics, Regular medical supervision | Early detection, Proper ventilation
-Malaria | Antimalarial drugs, Rest, Hydration | Mosquito control, Use of nets
-Dengue | Pain relievers, Fluids, Rest | Avoid stagnant water, Mosquito repellents
 Asthma | Inhalers, Avoid triggers | Avoid allergens, Regular checkups
+COVID-19 | Isolation, Fever medication, Oxygen therapy if severe | Vaccination, Mask wearing, Social distancing
+Dengue | Pain relievers, Fluids, Rest | Avoid stagnant water, Mosquito repellents
 Diabetes | Insulin therapy, Healthy diet, Exercise | Balanced diet, Regular monitoring
+Flu | Rest, Drink warm fluids, Paracetamol | Annual vaccination, Proper hygiene
 Iron Deficiency Anemia | Iron supplements, Iron-rich diet | Proper nutrition, Regular health screening
+Malaria | Antimalarial drugs, Rest, Hydration | Mosquito control, Use of nets
+Tuberculosis | Long-term antibiotics, Regular medical supervision | Early detection, Proper ventilation
+Typhoid | Antibiotics, Adequate fluids, Rest | Clean drinking water, Proper sanitation
 Vitamin D Deficiency | Vitamin D supplements, Sun exposure | Adequate sunlight, Balanced diet
