@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <sstream>
 #include <algorithm>
 using namespace std;
 
@@ -47,8 +48,8 @@ class Disease {
     public:
     string disease;
     LinkedListS symptoms;
-    LinkedListS treatment;
-    LinkedListS prevention;
+    string treatment;
+    string prevention;
     string category;
     int count;
     double prob;
@@ -177,6 +178,7 @@ vector <Disease> sortDiseases(vector <Disease> matchedDiseases) {
     return sortedDiseases;
 }
 
+
 class QueueS {
     public:
     Disease diseases[3];
@@ -202,7 +204,9 @@ class QueueS {
         if(isEmpty()) {
             front = rear = 0;
             diseases[rear] = d;
-        } else {
+        } else if(isFull()) {
+            return;
+        }else {
             diseases[++rear] = d;
         }
     }
@@ -227,10 +231,151 @@ class QueueS {
     void setProbs() {
         int c = totalCount();
         for(int i = 0; i < 3; i++) {
-            diseases[i].prob = (diseases[i].count/c)*100;
+            diseases[i].prob = (double(diseases[i].count)/double(c))*100;
+        }
+        
+    }
+
+     void setCategories() {
+
+        ifstream categoriesFile("C:\\Disease-Diagnosis-through-Data-structures-and-algorithms\\dataset\\Diseasecategory.txt",ios::in);
+
+        string line;
+
+        if(!categoriesFile.is_open()) return;
+
+        while(getline(categoriesFile, line)) {
+
+            for(int i = 0; i< line.length(); i++) {
+                line[i] = tolower(line[i]);
+            }
+            for(int i = front; i <= rear; i++) {
+
+                if(line.find(diseases[i].disease) != string::npos) {
+
+                    string cate = "";
+
+                    bool dash = false;
+
+                    for(int j = 0; j< line.length(); j++) {
+
+                        if(dash) {
+
+                            cate += line[j];
+
+                        }else if(line[j] == '|') {
+
+                            dash = true;
+
+                        }
+
+                    }
+
+                    diseases[i].category = cate;
+
+                }
+
+            }
+
+        }
+
+        categoriesFile.close();
+
+    }
+
+    void setTandP() {
+
+        ifstream TandPFile("C:\\Disease-Diagnosis-through-Data-structures-and-algorithms\\dataset\\treatmentAndPrevention.txt",ios::in);
+
+        string line;
+
+        if(!TandPFile.is_open()) {
+            cout << "no";
+            return;
+        }
+        while(getline(TandPFile, line)) {
+
+            for(int i = 0; i< line.length(); i++) {
+                line[i] = tolower(line[i]);
+            }
+            for(int i = front; i <= rear; i++) {
+
+                if(line.find(diseases[i].disease) != string::npos) {
+
+                    string t = "";
+
+                    string p = "";
+
+                    bool dash1 = false;
+
+                    bool dash2 = false;
+
+                    for(int j = 0; j< line.length(); j++) {
+                        if(line[j] == '|' && !dash1) {
+
+                            dash1 = true;
+                            continue;
+
+                        } else if(line[j] == '|' && dash1) {
+
+                            dash2 = true;
+                            continue;
+
+                        }
+                        if(dash1 && !dash2) {
+
+                            t+=line[j];
+
+                        } else if(dash1 && dash2) {
+
+                            p+=line[j];
+
+                        }
+
+                        
+
+                    }
+
+                    diseases[i].treatment = t;
+
+                    diseases[i].prevention = p;
+
+                }
+
+            }
+
+        }
+
+        TandPFile.close();
+
+    }
+
+
+
+    void display() {
+        cout << "\nHere are the diseases and the probabilty of having them based on your symptoms:\n";
+        int count = 1;
+        for(int i = front; i<= rear; i++) {
+            cout << count << ". \n";
+            cout << "Disease: " << diseases[i].disease << "\n";
+            cout << "Probabilty: " << diseases[i].prob << "%\n";
+            cout << "Category: " << diseases[i].category << "\n";
+            cout << "Treatment: " << diseases[i].treatment << "\n";
+            cout << "Prevention: " << diseases[i].prevention << "\n";
+
+            count++;
+            cout << "\n";
         }
     }
 };
+
+QueueS makeQ(vector <Disease> sortedDiseases) {
+    QueueS q;
+    for(int i = 0; i < 3; i++) {
+        q.push(sortedDiseases[i]);
+    }
+    return q;
+}
 
 int main() {
     NodeS* symptoms;
@@ -239,8 +384,15 @@ int main() {
     vector <Disease> matchedDiseases;
     matchedDiseases = getMatchedDiseases(symptoms);
 
+    displayMatchedDiseases(matchedDiseases);
+
     vector <Disease> sortedDiseases;
     sortedDiseases = sortDiseases(matchedDiseases);
 
+    QueueS q = makeQ(sortedDiseases);
+    q.setCategories();
+    q.setProbs();
+    q.setTandP();
+    q.display();
 
 }
