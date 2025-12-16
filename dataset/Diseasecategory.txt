@@ -17,25 +17,42 @@ Rubella | Viral
 Hepatitis A | Viral
 Hepatitis B | Viral
 Herpes Simplex | Viral
-Hookworm Infection | Parasitic
-Hypertension | Chronic
-Influenza | Viral
-Iron Deficiency Anemia | Deficiency
-Leprosy | Bacterial
-Malaria | unknown
-Measles | Viral
-Mononucleosis | Viral
-Mumps | Viral
-Night Blindness | Deficiency
 Norovirus Infection | Viral
-Onychomycosis | Fungal
-Osteoarthritis | Chronic
-Osteoporosis | Chronic
-Pellagra | Deficiency
-Pertussis | Bacterial
+Rotavirus Infection | Viral
+Mononucleosis | Viral
 Pneumonia (Streptococcal) | Bacterial
+Strep Throat | Bacterial
+Urinary Tract Infection | Bacterial
+Cholera | Bacterial
+Diphtheria | Bacterial
+Pertussis | Bacterial
+Tetanus | Bacterial
+Gonorrhea | Bacterial
+Chlamydia | Bacterial
+Syphilis | Bacterial
+Leprosy | Bacterial
+Giardiasis | Parasitic
+Toxoplasmosis | Parasitic
+Ascariasis | Parasitic
+Hookworm Infection | Parasitic
+Amoebiasis | Parasitic
+Trichomoniasis | Parasitic
+Hypertension | Chronic
+Coronary Heart Disease | Chronic
+Stroke | Chronic
+Chronic Obstructive Pulmonary Disease | Chronic
+Alzheimer's Disease | Chronic
+Osteoarthritis | Chronic
 Rheumatoid Arthritis | Chronic
+Osteoporosis | Chronic
+Chronic Kidney Disease | Chronic
+Scurvy | Deficiency
 Rickets | Deficiency
+Beriberi | Deficiency
+Pellagra | Deficiency
+Goiter | Deficiency
+Anemia (Folate Deficiency) | Deficiency
+Night Blindness | Deficiency
 Ringworm | Fungal
 Athlete's Foot | Fungal
 Candidiasis | Fungal
