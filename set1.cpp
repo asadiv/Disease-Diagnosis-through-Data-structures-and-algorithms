@@ -39,10 +39,7 @@ class LinkedListS {
     }
 };
 
-class Queue {
-    public:
-    
-};
+
 
 static int maxCount = 0;
 
@@ -50,12 +47,16 @@ class Disease {
     public:
     string disease;
     LinkedListS symptoms;
+    LinkedListS treatment;
+    LinkedListS prevention;
+    string category;
     int count;
+    double prob;
 
-    Disease(string n) {
-        disease = n;
+    Disease() {
         symptoms.head = nullptr;
         count = 0;
+        prob = 0.0;
     }
 }; 
 
@@ -124,7 +125,8 @@ vector<Disease> getMatchedDiseases(NodeS* s) {
         }
         if(count < maxCount) maxCount = count;
         if(found) {
-            Disease d(disease);
+            Disease d;
+            d.disease = disease;
             d.count = count;
             NodeS* curr = s;
             while(curr != nullptr) {
@@ -138,6 +140,7 @@ vector<Disease> getMatchedDiseases(NodeS* s) {
         
     }
 
+    symptomsFile.close();
     return fetchedDiseases;
 }
 
@@ -173,6 +176,61 @@ vector <Disease> sortDiseases(vector <Disease> matchedDiseases) {
 
     return sortedDiseases;
 }
+
+class QueueS {
+    public:
+    Disease diseases[3];
+    int front, rear;
+
+    QueueS(){
+        front = rear = -1;
+    }
+
+    bool isEmpty() {
+        if(front == -1 || rear== -1) {
+            return true;
+        } 
+        return false;
+    }
+    bool isFull() {
+        if(front > rear || rear == 2) {
+            return true;
+        }
+        return false;
+    }
+    void push(Disease d) {
+        if(isEmpty()) {
+            front = rear = 0;
+            diseases[rear] = d;
+        } else {
+            diseases[++rear] = d;
+        }
+    }
+
+    Disease pop() {
+        Disease temp;
+        if (isEmpty()) {
+            return temp;
+        }
+        temp = diseases[front++];
+        return temp;
+    }
+
+    int totalCount() {
+        int c = 0;
+        for(int i = 0; i < 3; i++) {
+            c += diseases[i].count;
+        }
+        return c;
+    }
+
+    void setProbs() {
+        int c = totalCount();
+        for(int i = 0; i < 3; i++) {
+            diseases[i].prob = (diseases[i].count/c)*100;
+        }
+    }
+};
 
 int main() {
     NodeS* symptoms;
