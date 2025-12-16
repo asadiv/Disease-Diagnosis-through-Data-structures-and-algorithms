@@ -1,8 +1,11 @@
-Asthma | Chronic
+Flu | Viral 
 COVID-19 | Viral
+Typhoid | Bacterial
+Tuberculosis | Bacterial
+Malaria | Parasitic
 Dengue | Viral
+Asthma | Chronic
 Diabetes | Chronic
-Flu | Viral
 Iron Deficiency Anemia | Deficiency
 Vitamin D Deficiency | Deficiency 
 Chickenpox | Viral

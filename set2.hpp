@@ -157,7 +157,9 @@ void loadDataSet2(){
 
             // trim spaces
             disease.erase(disease.find_last_not_of(" ") + 1);
+            disease.erase(0, category.find_first_not_of(" "));
             category.erase(0, category.find_first_not_of(" "));
+            category.erase(category.find_last_not_of(" ") + 1);
             categoryMap[disease] = category; //for easy access incase of needinf category of single disease
             bool catFound = false;
             for(auto& child:treetemp->children){
