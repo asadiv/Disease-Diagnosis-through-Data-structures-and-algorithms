@@ -1,3 +1,6 @@
+#ifndef SET2_H
+#define SET2_H
+
 #include<iostream>
 #include<vector>
 #include<fstream>
@@ -8,11 +11,11 @@
 using namespace std;
 
 // used to loads all data from files into linkedlists each node keeping a statmemt
-class Node{
+class NodeSet2{
     public:
     string term;
-    Node* next;
-    Node(string temp){
+    NodeSet2* next;
+    NodeSet2(string temp){
         term = temp;
         next = nullptr;
     }
@@ -33,9 +36,9 @@ unordered_map<string,string> categoryMap;
 // holds all data about a disease
 class DiseaseNode{
     public:
-    Node* symptomHead;
-    Node* preventionHead;
-    Node* treatmentHead;
+    NodeSet2* symptomHead;
+    NodeSet2* preventionHead;
+    NodeSet2* treatmentHead;
     string category,name;
     DiseaseNode* next;
     DiseaseNode(string name){
@@ -48,20 +51,52 @@ class DiseaseNode{
 };
 DiseaseNode* DiseaseHead= nullptr;
 // heads to be used again and again for each disease, once assigns the head to DiseaseNode than can be used for other disease
-Node* symptomHead=nullptr;
-Node* preventionHead=nullptr;
-Node* treatmentHead=nullptr;
+NodeSet2* symptomHead=nullptr;
+NodeSet2* preventionHead=nullptr;
+NodeSet2* treatmentHead=nullptr;
 
-DiseaseNode* lastDisease(){
-    DiseaseNode* temp = DiseaseHead;
-    if(temp==nullptr){
-        return nullptr;
+// Delete all nodes in a NodeSet2 linked list
+void deleteNodeList(NodeSet2* head) {
+    while (head) {
+        NodeSet2* temp = head;
+        head = head->next;
+        delete temp;
     }
-    while (temp->next)
-    {
-        temp=temp->next;
+}
+
+// Delete the entire disease linked list and all its sub-lists
+void deleteAllDiseases() {
+    DiseaseNode* current = DiseaseHead;
+    while (current) {
+        DiseaseNode* next = current->next;
+        
+        deleteNodeList(current->symptomHead);
+        deleteNodeList(current->preventionHead);
+        deleteNodeList(current->treatmentHead);
+        
+        delete current;
+        current = next;
     }
-    return temp;
+    DiseaseHead = nullptr;
+}
+
+// Recursively delete category tree
+void deleteCategoryTree(CategoryTree* node) {
+    if (!node) return;
+    for (auto child : node->children) {
+        deleteCategoryTree(child);
+        delete child;
+    }
+    node->children.clear();
+}
+
+// Clear everything
+void clearAllData() {
+    deleteAllDiseases();
+    deleteCategoryTree(categoryHead);
+    delete categoryHead;
+    categoryHead = nullptr;
+    categoryMap.clear();
 }
 
 
@@ -101,7 +136,15 @@ DiseaseNode* findDisease(string disease){
     return nullptr;
 }
 
-void loadData(){
+void loadDataSet2(){
+    // Clear any previously loaded data to prevent duplication
+    clearAllData();
+    
+    // Reset global temporary heads
+    symptomHead = nullptr;
+    preventionHead = nullptr;
+    treatmentHead = nullptr;
+
     ifstream categoryFile("dataset/Diseasecategory.txt",ios::in);
     if(!categoryFile){
         cout<<"Diseasecategory.txt file failed to open"<<endl;
@@ -163,14 +206,14 @@ void loadData(){
             sympEach.erase(0, sympEach.find_first_not_of(" "));
             sympEach.erase(sympEach.find_last_not_of(" ") + 1);
             if(symptomHead==nullptr){
-                Node* sympNode = new Node(sympEach);
+                NodeSet2* sympNode = new NodeSet2(sympEach);
                 symptomHead = sympNode;
             }else{
-                Node* iterationTemp = symptomHead;
+                NodeSet2* iterationTemp = symptomHead;
                 while(iterationTemp->next){
                     iterationTemp = iterationTemp->next;
                 }
-                iterationTemp->next = new Node(sympEach);
+                iterationTemp->next = new NodeSet2(sympEach);
             }
         }
         createDisease(disease); //create a disease node with this name and connect the symplist to sympHead of DiseaseNode
@@ -204,14 +247,14 @@ void loadData(){
             treatEach.erase(0, treatEach.find_first_not_of(" "));
             treatEach.erase(treatEach.find_last_not_of(" ") + 1);
             if(treatmentHead==nullptr){
-                Node* treatNode = new Node(treatEach);
+                NodeSet2* treatNode = new NodeSet2(treatEach);
                 treatmentHead = treatNode;
             }else{
-                Node* iterationTemp = treatmentHead;
+                NodeSet2* iterationTemp = treatmentHead;
                 while(iterationTemp->next){
                     iterationTemp = iterationTemp->next;
                 }
-                iterationTemp->next = new Node(treatEach);
+                iterationTemp->next = new NodeSet2(treatEach);
             }
         }
         // store preventions in linklist and connect to preventionHead
@@ -221,14 +264,14 @@ void loadData(){
             preventEach.erase(0, preventEach.find_first_not_of(" "));
             preventEach.erase(preventEach.find_last_not_of(" ") + 1);
             if(preventionHead==nullptr){
-                Node* treatNode = new Node(preventEach);
+                NodeSet2* treatNode = new NodeSet2(preventEach);
                 preventionHead = treatNode;
             }else{
-                Node* iterationTemp = preventionHead;
+                NodeSet2* iterationTemp = preventionHead;
                 while(iterationTemp->next){
                     iterationTemp = iterationTemp->next;
                 }
-                iterationTemp->next = new Node(preventEach);
+                iterationTemp->next = new NodeSet2(preventEach);
             }
         }
         // find this disease in Disease Linkedlist and attach the treatment and prevention linkedlists
@@ -252,21 +295,21 @@ void PrintDiseaseInfo(DiseaseNode* Disease){
     cout<<"NAME: "<<Disease->name<<endl;
     cout<<"CATEGORY: "<<Disease->category<<endl;
     cout<<"SYMPTOMS: "<<endl;
-    Node* sympTemp = Disease->symptomHead;
+    NodeSet2* sympTemp = Disease->symptomHead;
     while (sympTemp)
     {
         cout<<"   -> "<<sympTemp->term<<endl;
         sympTemp=sympTemp->next;
     }
     cout<<"PREVENTIONS: "<<endl;
-    Node* preventTemp = Disease->preventionHead;
+    NodeSet2* preventTemp = Disease->preventionHead;
     while (preventTemp)
     {
         cout<<"   -> "<<preventTemp->term<<endl;
         preventTemp=preventTemp->next;
     }
     cout<<"TREATMENT: "<<endl;
-    Node* treatTemp = Disease->treatmentHead;
+    NodeSet2* treatTemp = Disease->treatmentHead;
     while (treatTemp)
     {
         cout<<"   -> "<<treatTemp->term<<endl;
@@ -308,12 +351,16 @@ void DiseaseLookup(){
                 index++;
             }
             cout<<"Enter a digit to see respective disease or press any other key to exit: ";
-            int choice;
+            string choice;
             cin>>choice;
             cin.ignore();
-            if(choice>=1 && choice<=similarDiseases.size()){
-                PrintDiseaseInfo(similarDiseases[choice-1]);
+
+            if(stoi(choice)>=1 && stoi(choice)<=similarDiseases.size()){
+                PrintDiseaseInfo(similarDiseases[stoi(choice)-1]);
+                similarDiseases.clear();
+                return;
             }else{
+                similarDiseases.clear();
                 return;
             }
         }else{
@@ -353,9 +400,6 @@ void exploreCategory(){
 
 
 
-int main(){
-    loadData();
-    DiseaseLookup();
 
-    return 0;
-}
+
+#endif

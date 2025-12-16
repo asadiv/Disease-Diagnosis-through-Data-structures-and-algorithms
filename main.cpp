@@ -1,4 +1,5 @@
 #include<iostream>
+#include"set2.h"
 using namespace std;
 
 
@@ -22,10 +23,12 @@ int main(){
         switch (choice)
         {
         case 1:
-            /* code */
+            loadDataSet2();
+            DiseaseLookup();
             break;
         case 2:
-            /* code */
+            loadDataSet2();
+            exploreCategory();
             break;
         case 3:
             /* code */
