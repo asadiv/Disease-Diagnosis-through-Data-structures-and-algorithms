@@ -351,12 +351,17 @@ void DiseaseLookup(){
                 index++;
             }
             cout<<"Enter a digit to see respective disease or press any other key to exit: ";
-            string choice;
+            int choice;
             cin>>choice;
+            if(cin.fail()){  // means if non integer input is there
+                cin.clear(); //clear the input
+                cin.ignore(100,'\n');//ignore all chars entered
+                return;
+            }
             cin.ignore();
 
-            if(stoi(choice)>=1 && stoi(choice)<=similarDiseases.size()){
-                PrintDiseaseInfo(similarDiseases[stoi(choice)-1]);
+            if(choice>=1 && choice<=similarDiseases.size()){
+                PrintDiseaseInfo(similarDiseases[choice-1]);
                 similarDiseases.clear();
                 return;
             }else{
@@ -386,6 +391,12 @@ void exploreCategory(){
     cout<<"Choose a category:";
     int choice;
     cin>>choice;
+    if(cin.fail()){
+        cin.clear();
+        cin.ignore(100,'\n');
+        cout<<"Invalid input. returning...\n";
+        return;
+    }
     cin.ignore();
     if(choice>=1 && choice<=tempRoot->children.size()){
         cout<<"\nCategory: "<<tempRoot->children[choice-1]->name<<endl;

@@ -16,9 +16,14 @@ int main(){
         cout<<"5. Add Disease\n";
         cout<<"6. Update Disease\n";
     
-        cout<<"Choose an option:";
+        cout<<"Choose an option or press any key to exit:";
         int choice;
         cin>>choice;
+        if(cin.fail()){  // means if non integer input is there
+            cin.clear(); //clear the input
+            cin.ignore(100,'\n');//ignore all chars entered
+            return 0;
+        }
         cin.ignore();
         switch (choice)
         {
@@ -44,9 +49,9 @@ int main(){
             break;
         
         default:
-            cout<<"Please enter valid option.\n";
+            return 0;
             break;
         }
     }
-    
+    return 0;
 }
