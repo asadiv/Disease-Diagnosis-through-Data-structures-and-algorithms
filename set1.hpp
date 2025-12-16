@@ -1,9 +1,6 @@
 #ifndef SET1_HPP
 #define SET1_HPP
 
-
-
-
 class NodeS {
     public:
     string symptom;
