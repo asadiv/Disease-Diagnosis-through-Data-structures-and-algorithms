@@ -1,58 +1,61 @@
+Alzheimer's Disease | Chronic
+Amoebiasis | Parasitic
+Anemia (Folate Deficiency) | Deficiency
+Ascariasis | Parasitic
+Aspergillosis | Fungal
 Asthma | Chronic
+Athlete's Foot | Fungal
+Beriberi | Deficiency
 COVID-19 | Viral
+Candidiasis | Fungal
+Chickenpox | Viral
+Chlamydia | Bacterial
+Cholera | Bacterial
+Chronic Kidney Disease | Chronic
+Chronic Obstructive Pulmonary Disease | Chronic
+Common Cold | Viral
+Coronary Heart Disease | Chronic
 Dengue | Viral
 Diabetes | Chronic
+Diphtheria | Bacterial
 Flu | Viral
-Iron Deficiency Anemia | Deficiency
-Vitamin D Deficiency | Deficiency 
-Chickenpox | Viral
-Common Cold | Viral
-Influenza | Viral
-Measles | Viral
-Mumps | Viral
-Rubella | Viral
+Giardiasis | Parasitic
+Goiter | Deficiency
+Gonorrhea | Bacterial
 Hepatitis A | Viral
 Hepatitis B | Viral
 Herpes Simplex | Viral
-Norovirus Infection | Viral
-Rotavirus Infection | Viral
-Mononucleosis | Viral
-Pneumonia (Streptococcal) | Bacterial
-Strep Throat | Bacterial
-Urinary Tract Infection | Bacterial
-Cholera | Bacterial
-Diphtheria | Bacterial
-Pertussis | Bacterial
-Tetanus | Bacterial
-Gonorrhea | Bacterial
-Chlamydia | Bacterial
-Syphilis | Bacterial
-Leprosy | Bacterial
-Giardiasis | Parasitic
-Toxoplasmosis | Parasitic
-Ascariasis | Parasitic
 Hookworm Infection | Parasitic
-Amoebiasis | Parasitic
-Trichomoniasis | Parasitic
 Hypertension | Chronic
-Coronary Heart Disease | Chronic
-Stroke | Chronic
-Chronic Obstructive Pulmonary Disease | Chronic
-Alzheimer's Disease | Chronic
-Osteoarthritis | Chronic
-Rheumatoid Arthritis | Chronic
-Osteoporosis | Chronic
-Chronic Kidney Disease | Chronic
-Scurvy | Deficiency
-Rickets | Deficiency
-Beriberi | Deficiency
-Pellagra | Deficiency
-Goiter | Deficiency
-Anemia (Folate Deficiency) | Deficiency
+Influenza | Viral
+Iron Deficiency Anemia | Deficiency
+Leprosy | Bacterial
+Malaria | unknown
+Measles | Viral
+Mononucleosis | Viral
+Mumps | Viral
 Night Blindness | Deficiency
-Ringworm | Fungal
-Athlete's Foot | Fungal
-Candidiasis | Fungal
-Aspergillosis | Fungal
+Norovirus Infection | Viral
 Onychomycosis | Fungal
+Osteoarthritis | Chronic
+Osteoporosis | Chronic
+Pellagra | Deficiency
+Pertussis | Bacterial
+Pneumonia (Streptococcal) | Bacterial
+Rheumatoid Arthritis | Chronic
+Rickets | Deficiency
+Ringworm | Fungal
+Rotavirus Infection | Viral
+Rubella | Viral
+Scurvy | Deficiency
+Strep Throat | Bacterial
+Stroke | Chronic
+Syphilis | Bacterial
+Tetanus | Bacterial
 Tinea Versicolor | Fungal
+Toxoplasmosis | Parasitic
+Trichomoniasis | Parasitic
+Tuberculosis | unknown
+Typhoid | unknown
+Urinary Tract Infection | Bacterial
+Vitamin D Deficiency | Deficiency

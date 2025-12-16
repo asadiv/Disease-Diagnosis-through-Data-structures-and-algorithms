@@ -1,61 +1,61 @@
-Flu | fever, Cough, Sore throat, Body pain, Fatigue
+Alzheimer's Disease | Memory loss, Confusion, Difficulty planning, Mood changes, Disorientation
+Amoebiasis | Bloody diarrhea, Abdominal pain, Fever, Weight loss, Fatigue
+Anemia (Folate Deficiency) | Fatigue, Pale skin, Shortness of breath, Irritability, Headache
+Ascariasis | Abdominal pain, Nausea, Vomiting, Diarrhea, Cough
+Aspergillosis | Cough, Shortness of breath, Fever, Chest pain, Wheezing
+Asthma | 
+Athlete's Foot | Itchy blisters, Cracked skin, Redness, Burning, Peeling skin
+Beriberi | Fatigue, Irritability, Muscle weakness, Loss of appetite, Heart problems
 COVID-19 | Fever, Cough, Loss of taste, Breathing difficulty, Fatigue
+Candidiasis | White patches in mouth, Soreness, Difficulty swallowing, Itchy rash, Discharge
+Chickenpox | Itchy rash, Fever, Fatigue, Headache, Loss of appetite
+Chlamydia | Abnormal discharge, Painful urination, Lower abdominal pain, Bleeding between periods, Testicular pain
+Cholera | Severe watery diarrhea, Vomiting, Dehydration, Leg cramps, Rapid heart rate
+Chronic Kidney Disease | Fatigue, Swelling in legs, Loss of appetite, Nausea, Itchy skin
+Chronic Obstructive Pulmonary Disease | Shortness of breath, Chronic cough, Wheezing, Chest tightness, Fatigue
+Common Cold | Runny nose, Sneezing, Sore throat, Cough, Mild fever
+Coronary Heart Disease | Chest pain, Shortness of breath, Fatigue, Nausea, Arm pain
 Dengue | High fever, Joint pain, Muscle pain, Rash, Headache
 Diabetes | Frequent urination, Increased thirst, Fatigue, Blurred vision
-Flu | Fever, Cough, Sore throat, Body pain, Fatigue
-Iron Deficiency Anemia | Fatigue, Pale skin, Dizziness, Shortness of breath
-Malaria | Fever, Chills, Sweating, Headache, Nausea
-Tuberculosis | Persistent cough, Weight loss, Night sweats, Fever
-Typhoid | High fever, Headache, Weakness, Abdominal pain
-Vitamin D Deficiency | Bone pain, Muscle weakness, Fatigue
-Chickenpox | Itchy rash, Fever, Fatigue, Headache, Loss of appetite
-Common Cold | Runny nose, Sneezing, Sore throat, Cough, Mild fever
-Influenza | High fever, Chills, Muscle aches, Cough, Fatigue, Headache
-Measles | High fever, Cough, Runny nose, Red eyes, Rash
-Mumps | Swollen cheeks, Fever, Headache, Muscle aches, Fatigue
-Rubella | Mild fever, Rash, Swollen lymph nodes, Joint pain, Red eyes
+Diphtheria | Sore throat, Fever, Gray membrane in throat, Weakness, Swollen neck
+Flu | fever, Cough, Sore throat, Body pain, Fatigue, Fever
+Giardiasis | Diarrhea, Abdominal cramps, Bloating, Nausea, Fatigue
+Goiter | Swollen neck, Difficulty swallowing, Hoarseness, Cough, Tightness in throat
+Gonorrhea | Painful urination, Abnormal discharge, Pelvic pain, Sore throat, Fever
 Hepatitis A | Fatigue, Nausea, Abdominal pain, Loss of appetite, Jaundice
 Hepatitis B | Fatigue, Abdominal pain, Jaundice, Dark urine, Joint pain
 Herpes Simplex | Painful blisters, Itching, Fever, Swollen lymph nodes, Headache
-Norovirus Infection | Nausea, Vomiting, Diarrhea, Abdominal pain, Fever
-Rotavirus Infection | Severe diarrhea, Vomiting, Fever, Abdominal pain, Dehydration
-Mononucleosis | Fatigue, Sore throat, Fever, Swollen lymph nodes, Headache
-Pneumonia (Streptococcal) | High fever, Chills, Cough with phlegm, Chest pain, Shortness of breath
-Strep Throat | Sore throat, Fever, Swollen tonsils, Headache, Abdominal pain
-Urinary Tract Infection | Painful urination, Frequent urination, Lower abdominal pain, Cloudy urine, Fever
-Cholera | Severe watery diarrhea, Vomiting, Dehydration, Leg cramps, Rapid heart rate
-Diphtheria | Sore throat, Fever, Gray membrane in throat, Weakness, Swollen neck
-Pertussis | Severe coughing fits, Whooping sound, Vomiting, Fatigue, Runny nose
-Tetanus | Muscle stiffness, Lockjaw, Difficulty swallowing, Fever, Muscle spasms
-Gonorrhea | Painful urination, Abnormal discharge, Pelvic pain, Sore throat, Fever
-Chlamydia | Abnormal discharge, Painful urination, Lower abdominal pain, Bleeding between periods, Testicular pain
-Syphilis | Painless sore, Rash, Fever, Swollen lymph nodes, Hair loss
-Leprosy | Skin lesions, Numbness, Weak muscles, Enlarged nerves, Nosebleeds
-Giardiasis | Diarrhea, Abdominal cramps, Bloating, Nausea, Fatigue
-Toxoplasmosis | Flu-like symptoms, Swollen lymph nodes, Muscle aches, Fatigue, Headache
-Ascariasis | Abdominal pain, Nausea, Vomiting, Diarrhea, Cough 
 Hookworm Infection | Itchy rash, Abdominal pain, Diarrhea, Fatigue, Anemia
-Amoebiasis | Bloody diarrhea, Abdominal pain, Fever, Weight loss, Fatigue
-Trichomoniasis | Itchy genitals, Abnormal discharge, Painful urination, Lower abdominal pain, Discomfort during sex
 Hypertension | Headache, Shortness of breath, Nosebleeds, Dizziness, Chest pain
-Coronary Heart Disease | Chest pain, Shortness of breath, Fatigue, Nausea, Arm pain
-Stroke | Sudden numbness, Confusion, Trouble speaking, Severe headache, Loss of balance
-Chronic Obstructive Pulmonary Disease | Shortness of breath, Chronic cough, Wheezing, Chest tightness, Fatigue
-Alzheimer's Disease | Memory loss, Confusion, Difficulty planning, Mood changes, Disorientation
-Osteoarthritis | Joint pain, Stiffness, Swelling, Reduced range of motion, Tenderness
-Rheumatoid Arthritis | Joint pain, Swelling, Stiffness, Fatigue, Fever
-Osteoporosis | Back pain, Stooped posture, Loss of height, Easily fractured bones, Bone pain
-Chronic Kidney Disease | Fatigue, Swelling in legs, Loss of appetite, Nausea, Itchy skin
-Scurvy | Fatigue, Swollen gums, Bruising, Joint pain, Poor wound healing
-Rickets | Bowed legs, Delayed growth, Bone pain, Muscle weakness, Dental problems
-Beriberi | Fatigue, Irritability, Muscle weakness, Loss of appetite, Heart problems
-Pellagra | Diarrhea, Dermatitis, Dementia, Inflamed mouth, Fatigue
-Goiter | Swollen neck, Difficulty swallowing, Hoarseness, Cough, Tightness in throat
-Anemia (Folate Deficiency) | Fatigue, Pale skin, Shortness of breath, Irritability, Headache
+Influenza | High fever, Chills, Muscle aches, Cough, Fatigue, Headache
+Iron Deficiency Anemia | Fatigue, Pale skin, Dizziness, Shortness of breath
+Leprosy | Skin lesions, Numbness, Weak muscles, Enlarged nerves, Nosebleeds
+Malaria | Fever, Chills, Sweating, Headache, Nausea
+Measles | High fever, Cough, Runny nose, Red eyes, Rash
+Mononucleosis | Fatigue, Sore throat, Fever, Swollen lymph nodes, Headache
+Mumps | Swollen cheeks, Fever, Headache, Muscle aches, Fatigue
 Night Blindness | Difficulty seeing in low light, Dry eyes, Frequent eye infections, Blurred vision, Bitot's spots
-Ringworm | Red itchy ring-shaped rash, Scaly skin, Hair loss, Blisters, Itching
-Athlete's Foot | Itchy blisters, Cracked skin, Redness, Burning, Peeling skin
-Candidiasis | White patches in mouth, Soreness, Difficulty swallowing, Itchy rash, Discharge
-Aspergillosis | Cough, Shortness of breath, Fever, Chest pain, Wheezing
+Norovirus Infection | Nausea, Vomiting, Diarrhea, Abdominal pain, Fever
 Onychomycosis | Thickened nails, Discolored nails, Brittle nails, Foul odor, Separation from nail bed
+Osteoarthritis | Joint pain, Stiffness, Swelling, Reduced range of motion, Tenderness
+Osteoporosis | Back pain, Stooped posture, Loss of height, Easily fractured bones, Bone pain
+Pellagra | Diarrhea, Dermatitis, Dementia, Inflamed mouth, Fatigue
+Pertussis | Severe coughing fits, Whooping sound, Vomiting, Fatigue, Runny nose
+Pneumonia (Streptococcal) | High fever, Chills, Cough with phlegm, Chest pain, Shortness of breath
+Rheumatoid Arthritis | Joint pain, Swelling, Stiffness, Fatigue, Fever
+Rickets | Bowed legs, Delayed growth, Bone pain, Muscle weakness, Dental problems
+Ringworm | Red itchy ring-shaped rash, Scaly skin, Hair loss, Blisters, Itching
+Rotavirus Infection | Severe diarrhea, Vomiting, Fever, Abdominal pain, Dehydration
+Rubella | Mild fever, Rash, Swollen lymph nodes, Joint pain, Red eyes
+Scurvy | Fatigue, Swollen gums, Bruising, Joint pain, Poor wound healing
+Strep Throat | Sore throat, Fever, Swollen tonsils, Headache, Abdominal pain
+Stroke | Sudden numbness, Confusion, Trouble speaking, Severe headache, Loss of balance
+Syphilis | Painless sore, Rash, Fever, Swollen lymph nodes, Hair loss
+Tetanus | Muscle stiffness, Lockjaw, Difficulty swallowing, Fever, Muscle spasms
 Tinea Versicolor | Discolored skin patches, Itching, Scaling, Mild redness, Uneven skin tone
+Toxoplasmosis | Flu-like symptoms, Swollen lymph nodes, Muscle aches, Fatigue, Headache
+Trichomoniasis | Itchy genitals, Abnormal discharge, Painful urination, Lower abdominal pain, Discomfort during sex
+Tuberculosis | Persistent cough, Weight loss, Night sweats, Fever
+Typhoid | High fever, Headache, Weakness, Abdominal pain
+Urinary Tract Infection | Painful urination, Frequent urination, Lower abdominal pain, Cloudy urine, Fever
+Vitamin D Deficiency | Bone pain, Muscle weakness, Fatigue
