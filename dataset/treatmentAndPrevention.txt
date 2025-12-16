@@ -1,61 +1,61 @@
+Alzheimer's Disease | Cholinesterase inhibitors, Memantine, Supportive care | Healthy lifestyle, Mental stimulation
+Amoebiasis | Metronidazole, Paromomycin | Safe water, Hygiene
+Anemia (Folate Deficiency) | Folate supplements, Folate-rich foods | Balanced diet with greens
+Ascariasis | Anthelmintic drugs like albendazole | Hand hygiene, Safe food practices
+Aspergillosis | Antifungal drugs like voriconazole | Avoid moldy environments
 Asthma | Inhalers, Avoid triggers | Avoid allergens, Regular checkups
+Athlete's Foot | Antifungal powders or creams, Keep feet dry | Wear breathable shoes, Dry feet well
+Beriberi | Thiamine supplements, Thiamine-rich diet | Balanced diet with whole grains
 COVID-19 | Isolation, Fever medication, Oxygen therapy if severe | Vaccination, Mask wearing, Social distancing
+Candidiasis | Antifungal medications, Keep area dry | Control blood sugar, Good hygiene
+Chickenpox | Antihistamines, Calamine lotion, Acetaminophen for fever, Rest | Varicella vaccination, Avoid contact with infected persons
+Chlamydia | Antibiotics, Partner treatment | Safe sex, Regular screening
+Cholera | Oral rehydration, Antibiotics in severe cases | Safe water, Sanitation, Vaccination in outbreaks
+Chronic Kidney Disease | Blood pressure control, Dialysis if advanced | Manage diabetes, Healthy diet
+Chronic Obstructive Pulmonary Disease | Bronchodilators, Inhaled steroids, Oxygen therapy | Quit smoking, Avoid pollutants
+Common Cold | Rest, Fluids, Over-the-counter decongestants, Pain relievers | Hand washing, Avoid close contact with sick people
+Coronary Heart Disease | Statins, Aspirin, Beta-blockers, Lifestyle changes | Healthy diet, Exercise, No smoking
 Dengue | Pain relievers, Fluids, Rest | Avoid stagnant water, Mosquito repellents
 Diabetes | Insulin therapy, Healthy diet, Exercise | Balanced diet, Regular monitoring
+Diphtheria | Antitoxin, Antibiotics, Isolation | DTP vaccination, Booster doses
 Flu | Rest, Drink warm fluids, Paracetamol | Annual vaccination, Proper hygiene
-Iron Deficiency Anemia | Iron supplements, Iron-rich diet | Proper nutrition, Regular health screening
-Malaria | Antimalarial drugs, Rest, Hydration | Mosquito control, Use of nets
-Tuberculosis | Long-term antibiotics, Regular medical supervision | Early detection, Proper ventilation
-Typhoid | Antibiotics, Adequate fluids, Rest | Clean drinking water, Proper sanitation
-Vitamin D Deficiency | Vitamin D supplements, Sun exposure | Adequate sunlight, Balanced diet
-Chickenpox | Antihistamines, Calamine lotion, Acetaminophen for fever, Rest | Varicella vaccination, Avoid contact with infected persons
-Common Cold | Rest, Fluids, Over-the-counter decongestants, Pain relievers | Hand washing, Avoid close contact with sick people
-Influenza | Antiviral medications, Rest, Fluids, Pain relievers | Annual flu vaccination, Hand hygiene
-Measles | Supportive care, Vitamin A supplements, Pain relievers | MMR vaccination, Isolation of infected
-Mumps | Pain relievers, Warm or cold packs for swelling, Rest | MMR vaccination, Avoid contact with infected
-Rubella | Supportive care, Pain relievers, Rest | MMR vaccination, Isolation during infection
+Giardiasis | Antibiotics like metronidazole, Hydration | Safe drinking water, Hand washing
+Goiter | Iodine supplements, Iodized salt | Use iodized salt, Seafood consumption
+Gonorrhea | Antibiotics, Partner treatment | Safe sex, Condom use
 Hepatitis A | Supportive care, Rest, Hydration | Hepatitis A vaccination, Safe food and water practices
 Hepatitis B | Antiviral medications, Regular monitoring, Rest | Hepatitis B vaccination, Safe sex practices
 Herpes Simplex | Antiviral medications like acyclovir, Pain relievers | Avoid triggers, Safe sex practices
-Norovirus Infection | Hydration, Rest, Electrolyte replacement | Hand washing, Safe food handling
-Rotavirus Infection | Oral rehydration, Rest | Rotavirus vaccination, Hand hygiene
-Mononucleosis | Rest, Pain relievers, Hydration | Avoid contact sports, Good hygiene
-Pneumonia (Streptococcal) | Antibiotics, Rest, Fluids | Pneumococcal vaccination, Avoid smoking
-Strep Throat | Antibiotics like penicillin, Pain relievers | Good hygiene, Avoid close contact
-Urinary Tract Infection | Antibiotics, Increased fluids, Pain relievers | Wipe front to back, Urinate after sex
-Cholera | Oral rehydration, Antibiotics in severe cases | Safe water, Sanitation, Vaccination in outbreaks
-Diphtheria | Antitoxin, Antibiotics, Isolation | DTP vaccination, Booster doses
-Pertussis | Antibiotics, Supportive care | DTaP vaccination, Avoid contact with infants
-Tetanus | Tetanus immunoglobulin, Antibiotics, Wound care | Tetanus vaccination, Wound hygiene
-Gonorrhea | Antibiotics, Partner treatment | Safe sex, Condom use
-Chlamydia | Antibiotics, Partner treatment | Safe sex, Regular screening
-Syphilis | Penicillin injections, Follow-up testing | Safe sex, Regular testing
-Leprosy | Multidrug therapy, Wound care | Early detection, Contact tracing
-Giardiasis | Antibiotics like metronidazole, Hydration | Safe drinking water, Hand washing
-Toxoplasmosis | Pyrimethamine and sulfadiazine, Folate supplements | Cook meat thoroughly, Avoid cat litter
-Ascariasis | Anthelmintic drugs like albendazole | Hand hygiene, Safe food practices
 Hookworm Infection | Anthelmintic drugs, Iron supplements | Wear shoes, Sanitation
-Amoebiasis | Metronidazole, Paromomycin | Safe water, Hygiene
-Trichomoniasis | Metronidazole or tinidazole, Partner treatment | Safe sex, Condom use
 Hypertension | Antihypertensive medications, Lifestyle changes | Healthy diet, Exercise, Limit salt
-Coronary Heart Disease | Statins, Aspirin, Beta-blockers, Lifestyle changes | Healthy diet, Exercise, No smoking
-Stroke | Clot-busters or thrombectomy, Aspirin, Rehabilitation | Control blood pressure, Healthy lifestyle
-Chronic Obstructive Pulmonary Disease | Bronchodilators, Inhaled steroids, Oxygen therapy | Quit smoking, Avoid pollutants
-Alzheimer's Disease | Cholinesterase inhibitors, Memantine, Supportive care | Healthy lifestyle, Mental stimulation
-Osteoarthritis | Pain relievers, Physical therapy, Weight management | Exercise, Healthy weight
-Rheumatoid Arthritis | DMARDs, Biologics, NSAIDs | Early treatment, Exercise
-Osteoporosis | Bisphosphonates, Calcium and vitamin D, Exercise | Adequate calcium intake, Weight-bearing exercise
-Chronic Kidney Disease | Blood pressure control, Dialysis if advanced | Manage diabetes, Healthy diet
-Scurvy | Vitamin C supplements, Vitamin C-rich foods | Balanced diet with fruits and vegetables
-Rickets | Vitamin D supplements, Sun exposure, Calcium | Adequate sunlight, Vitamin D-rich foods
-Beriberi | Thiamine supplements, Thiamine-rich diet | Balanced diet with whole grains
-Pellagra | Niacin supplements, Niacin-rich foods | Diverse diet including proteins
-Goiter | Iodine supplements, Iodized salt | Use iodized salt, Seafood consumption
-Anemia (Folate Deficiency) | Folate supplements, Folate-rich foods | Balanced diet with greens
+Influenza | Antiviral medications, Rest, Fluids, Pain relievers | Annual flu vaccination, Hand hygiene
+Iron Deficiency Anemia | Iron supplements, Iron-rich diet | Proper nutrition, Regular health screening
+Leprosy | Multidrug therapy, Wound care | Early detection, Contact tracing
+Malaria | Antimalarial drugs, Rest, Hydration | Mosquito control, Use of nets
+Measles | Supportive care, Vitamin A supplements, Pain relievers | MMR vaccination, Isolation of infected
+Mononucleosis | Rest, Pain relievers, Hydration | Avoid contact sports, Good hygiene
+Mumps | Pain relievers, Warm or cold packs for swelling, Rest | MMR vaccination, Avoid contact with infected
 Night Blindness | Vitamin A supplements, Vitamin A-rich foods | Diet with carrots and greens
-Ringworm | Antifungal creams, Keep area dry | Avoid sharing items, Good hygiene
-Athlete's Foot | Antifungal powders or creams, Keep feet dry | Wear breathable shoes, Dry feet well
-Candidiasis | Antifungal medications, Keep area dry | Control blood sugar, Good hygiene
-Aspergillosis | Antifungal drugs like voriconazole | Avoid moldy environments 
+Norovirus Infection | Hydration, Rest, Electrolyte replacement | Hand washing, Safe food handling
 Onychomycosis | Oral antifungals, Topical treatments | Keep nails trimmed, Avoid moist environments
+Osteoarthritis | Pain relievers, Physical therapy, Weight management | Exercise, Healthy weight
+Osteoporosis | Bisphosphonates, Calcium and vitamin D, Exercise | Adequate calcium intake, Weight-bearing exercise
+Pellagra | Niacin supplements, Niacin-rich foods | Diverse diet including proteins
+Pertussis | Antibiotics, Supportive care | DTaP vaccination, Avoid contact with infants
+Pneumonia (Streptococcal) | Antibiotics, Rest, Fluids | Pneumococcal vaccination, Avoid smoking
+Rheumatoid Arthritis | DMARDs, Biologics, NSAIDs | Early treatment, Exercise
+Rickets | Vitamin D supplements, Sun exposure, Calcium | Adequate sunlight, Vitamin D-rich foods
+Ringworm | Antifungal creams, Keep area dry | Avoid sharing items, Good hygiene
+Rotavirus Infection | Oral rehydration, Rest | Rotavirus vaccination, Hand hygiene
+Rubella | Supportive care, Pain relievers, Rest | MMR vaccination, Isolation during infection
+Scurvy | Vitamin C supplements, Vitamin C-rich foods | Balanced diet with fruits and vegetables
+Strep Throat | Antibiotics like penicillin, Pain relievers | Good hygiene, Avoid close contact
+Stroke | Clot-busters or thrombectomy, Aspirin, Rehabilitation | Control blood pressure, Healthy lifestyle
+Syphilis | Penicillin injections, Follow-up testing | Safe sex, Regular testing
+Tetanus | Tetanus immunoglobulin, Antibiotics, Wound care | Tetanus vaccination, Wound hygiene
 Tinea Versicolor | Antifungal shampoos or creams, Keep skin dry | Avoid oily products, Sun exposure moderation
+Toxoplasmosis | Pyrimethamine and sulfadiazine, Folate supplements | Cook meat thoroughly, Avoid cat litter
+Trichomoniasis | Metronidazole or tinidazole, Partner treatment | Safe sex, Condom use
+Tuberculosis | Long-term antibiotics, Regular medical supervision | Early detection, Proper ventilation
+Typhoid | Antibiotics, Adequate fluids, Rest | Clean drinking water, Proper sanitation
+Urinary Tract Infection | Antibiotics, Increased fluids, Pain relievers | Wipe front to back, Urinate after sex
+Vitamin D Deficiency | Vitamin D supplements, Sun exposure | Adequate sunlight, Balanced diet
