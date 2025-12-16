@@ -16,6 +16,15 @@ using namespace std;
 
 
 int main(){
+
+    cout << "  __  __ ______ _____          _____ " << endl;
+    cout << " |  \\/  |  ____|  __ \\   /\\   |_   _|" << endl;
+    cout << " | \\  / | |__  | |  | | /  \\    | |  " << endl;
+    cout << " | |\\/| |  __| | |  | |/ /\\ \\   | |  " << endl;
+    cout << " | |  | | |____| |__| / ____ \\ _| |_ " << endl;
+    cout << " |_|  |_|______|_____/_/    \\_\\_____|" << endl;
+    cout << endl;
+
     while (true)
     {     
         cout<<"\n\n==========DISEASE DIAGNOSIS PORTAL==========\n";
